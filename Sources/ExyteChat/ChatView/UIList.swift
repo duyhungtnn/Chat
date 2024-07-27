@@ -488,8 +488,7 @@ struct UIList<MessageContent: View, InputView: View>: UIViewRepresentable {
                     headerBuilder(sections[section].date)
                 } else {
                     Text(sections[section].formattedDate)
-                        .font(.system(size: 11))
-                        .rotationEffect(Angle(degrees: (type == .conversation ? 180 : 0)))
+                        .font(.system(size: 11)) 
                         .padding(10)
                         .padding(.bottom, 8)
                         .foregroundColor(.gray)
